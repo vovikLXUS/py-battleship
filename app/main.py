@@ -15,8 +15,6 @@ class Ship:
             end: tuple,
             is_drowned: bool = False
     ) -> None:
-        self.start = start
-        self.end = end
         self.is_drowned = is_drowned
         self.decks = []
 
@@ -85,7 +83,7 @@ class Battleship:
 
         return "Hit!"
 
-    def prind_field(self) -> None:
+    def print_field(self) -> None:
         for row in range(10):
             line = []
 
